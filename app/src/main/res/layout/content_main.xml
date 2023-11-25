@@ -29,15 +29,17 @@
                 android:text="Why Yoga ?"
                 android:gravity="center"
                 android:textColor="@color/primary_text"
-                android:textSize="@dimen/dimen_25sp"/>
+                android:textSize="35sp"/>
 
-            <com.ntpl.eyoga.font.TextViewMedium
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/dimen_17sp"
+                android:textSize="@dimen/dimen_15sp"
                 android:layout_marginTop="@dimen/dimen_18"
-                android:textColor="@color/third_text"
+                android:textColor="@color/back_button"
                 android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:paddingHorizontal="10dp"
                 android:lineSpacingExtra="@dimen/dimen_5"
                 android:text="1. The International day of yoga has been celebrated annually on 21st june since 2015.\n\n2. It improves our concentration, creativity and sharpens our memory.\n\n3. Yoga prevents that situation and improve stamina, muscle strength and mental stability\n\n4. Yoga teaches us the knowledge of how to lead a healthy living. Yoga is the perfect medicine to cure you.\n\n5. Yoga is teaches us the way to live life simply."
                 android:gravity="start" />
