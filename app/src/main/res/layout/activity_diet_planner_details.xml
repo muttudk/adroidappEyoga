@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.DietPlannerDetailsActivity">
+
+    <LinearLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_10">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/dimen_22"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_left_arrow"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"/>
+
+        <com.ntpl.eyoga.font.TextViewSemiBold
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asana Name"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/dimen_18sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_15"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fitsSystemWindows="true"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10">
+
+            <com.ntpl.eyoga.font.TextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diet : "
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/dimen_16sp"/>
+
+            <com.ntpl.eyoga.font.TextViewRegular
+                android:id="@+id/diet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diet"
+                android:lineSpacingExtra="@dimen/dimen_5"
+                android:textColor="@color/third_text"
+                android:textSize="@dimen/dimen_15sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

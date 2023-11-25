@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ntpl.eyoga">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/yoga16"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+    <activity android:name=".activities.WeeklyWeekReportActivity"
+        android:theme="@style/AppTheme.NoActionBar"/>
+    <activity
+        android:name=".activities.WeeklyReportActivity"
+        android:theme="@style/AppTheme.NoActionBar" />
+    <activity
+        android:name=".activities.MonthlyReportActivity"
+        android:theme="@style/AppTheme.NoActionBar" />
+    <activity
+        android:name=".activities.SideEffectsActivity"
+        android:theme="@style/AppTheme.NoActionBar" />
+    <activity
+        android:name=".activities.BenefitsActivity"
+        android:theme="@style/AppTheme.NoActionBar" />
+    <activity
+        android:name=".activities.DietPlannerDetailsActivity"
+        android:theme="@style/AppTheme.NoActionBar" />
+    <activity
+        android:name=".activities.DietPlannerActivity"
+        android:theme="@style/AppTheme.NoActionBar" />
+    <activity
+        android:name=".activities.ActivityTrackerActivity"
+        android:theme="@style/AppTheme.NoActionBar" />
+    <activity
+        android:name=".activities.DiseaseDetailsActivity"
+        android:theme="@style/AppTheme.NoActionBar" />
+    <activity android:name=".activities.YoutubePlayerActivity" />
+    <activity
+        android:name=".activities.SearchDiseaseActivity"
+        android:theme="@style/AppTheme.NoActionBar" />
+    <activity
+        android:name=".activities.MainActivity"
+        android:theme="@style/AppTheme.NoActionBar" />
+    <activity
+        android:name=".activities.ForgotPasswordActivity"
+        android:theme="@style/AppTheme.NoActionBar" />
+    <activity
+        android:name=".activities.RegisterActivity"
+        android:theme="@style/AppTheme.NoActionBar" />
+    <activity
+        android:name=".activities.LoginActivity"
+        android:theme="@style/AppTheme.NoActionBar" />
+    <activity
+        android:name=".activities.FirstActivity"
+        android:theme="@style/AppTheme.NoActionBar" />
+    <activity
+        android:name=".activities.SplashScreenActivity"
+        android:theme="@style/AppTheme.NoActionBar">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name=".activities.AndroidDatabaseManager"
+        android:label="Database"
+        android:theme="@style/AppTheme" />
+
+    <provider
+        android:name="androidx.core.content.FileProvider"
+        android:authorities="com.ntpl.eyoga"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_paths" />
+    </provider>
+    </application>
+
+
+</manifest>

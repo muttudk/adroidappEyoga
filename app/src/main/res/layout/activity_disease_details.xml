@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activities.DiseaseDetailsActivity">
+
+    <LinearLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_10">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/dimen_22"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_left_arrow"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"/>
+
+        <com.ntpl.eyoga.font.TextViewSemiBold
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asana Name"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/dimen_18sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginRight="@dimen/dimen_15"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_above="@+id/footerLinear"
+        android:layout_below="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fitsSystemWindows="true"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.ntpl.eyoga.font.TextViewSemiBold
+                android:id="@+id/asanaName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Asana Name"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/dimen_16sp"
+                android:gravity="center"
+                android:padding="@dimen/dimen_10"/>
+
+            <com.google.android.youtube.player.YouTubeThumbnailView
+                android:visibility="gone"
+                android:id="@+id/video_thumbnail_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/black_transparent"
+                android:scaleType="fitXY" />
+
+            <com.google.android.youtube.player.YouTubePlayerView
+                android:id="@+id/youtube_player_view"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_10">
+
+                <com.ntpl.eyoga.font.TextViewSemiBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diet : "
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/dimen_16sp"/>
+
+                <com.ntpl.eyoga.font.TextViewRegular
+                    android:id="@+id/diet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diet"
+                    android:lineSpacingExtra="@dimen/dimen_3"
+                    android:textColor="@color/third_text"
+                    android:textSize="@dimen/dimen_15sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/grey_300"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_10">
+
+                <com.ntpl.eyoga.font.TextViewSemiBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rules : "
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/dimen_16sp"/>
+
+                <com.ntpl.eyoga.font.TextViewRegular
+                    android:id="@+id/rules"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rules"
+                    android:lineSpacingExtra="@dimen/dimen_3"
+                    android:textColor="@color/third_text"
+                    android:textSize="@dimen/dimen_16sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/grey_300"/>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_10">
+
+                <com.ntpl.eyoga.font.TextViewSemiBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Benefits : "
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/dimen_16sp"/>
+
+                <com.ntpl.eyoga.font.TextViewRegular
+                    android:id="@+id/benefits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Benefits"
+                    android:textColor="@color/third_text"
+                    android:lineSpacingExtra="@dimen/dimen_3"
+                    android:textSize="@dimen/dimen_15sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/grey_300"/>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_10">
+
+                <com.ntpl.eyoga.font.TextViewSemiBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Side-Effects : "
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/dimen_16sp"/>
+
+                <com.ntpl.eyoga.font.TextViewRegular
+                    android:id="@+id/sideEffects"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Side effects"
+                    android:textColor="@color/third_text"
+                    android:lineSpacingExtra="@dimen/dimen_3"
+                    android:textSize="@dimen/dimen_15sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/grey_300"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footerLinear"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.ntpl.eyoga.font.ButtonSemiBold
+            android:layout_weight="50"
+            android:id="@+id/benefitsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Benefits"
+            android:textSize="@dimen/dimen_15sp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button_left" />
+
+        <com.ntpl.eyoga.font.ButtonSemiBold
+            android:layout_marginLeft="@dimen/dimen_15"
+            android:layout_marginStart="@dimen/dimen_15"
+            android:layout_weight="50"
+            android:id="@+id/sideEffectsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Side Efects"
+            android:textSize="@dimen/dimen_15sp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button_right" />
+
+    </LinearLayout>
+
+</RelativeLayout>

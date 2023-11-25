@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_actiity_tracker"
+            android:icon="@drawable/radar"
+            android:title="Activity Tracker" />
+
+        <item
+            android:id="@+id/nav_diet_planner"
+            android:icon="@drawable/calendar_edit"
+            android:title="Diet Planner" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/power"
+            android:title="Logout" />
+    </group>
+
+</menu>

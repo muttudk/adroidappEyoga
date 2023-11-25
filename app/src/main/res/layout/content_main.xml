@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main"
+    tools:context=".activities.MainActivity">
+
+    <ScrollView
+        android:layout_above="@+id/clickHere"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fitsSystemWindows="true"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_16">
+
+            <com.ntpl.eyoga.font.TextViewSemiBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Why Yoga ?"
+                android:gravity="center"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/dimen_25sp"/>
+
+            <com.ntpl.eyoga.font.TextViewMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_17sp"
+                android:layout_marginTop="@dimen/dimen_18"
+                android:textColor="@color/third_text"
+                android:textAlignment="textStart"
+                android:lineSpacingExtra="@dimen/dimen_5"
+                android:text="1. The International day of yoga has been celebrated annually on 21st june since 2015.\n\n2. It improves our concentration, creativity and sharpens our memory.\n\n3. Yoga prevents that situation and improve stamina, muscle strength and mental stability\n\n4. Yoga teaches us the knowledge of how to lead a healthy living. Yoga is the perfect medicine to cure you.\n\n5. Yoga is teaches us the way to live life simply."
+                android:gravity="start" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.ntpl.eyoga.font.ButtonSemiBold
+        android:id="@+id/clickHere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/button_back"
+        android:text="Click Here"
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>
